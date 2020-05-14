@@ -1,0 +1,15 @@
+var line = readInput();
+
+var pr_sum = 0;
+var act_sum = 0;
+
+while( line != null )
+	var sum = pr_sum + act_sum + line[0];
+	println( sum );
+
+	pr_sum = act_sum;
+	act_sum = sum;
+
+	line = readInput();
+
+endwhile

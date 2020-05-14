@@ -1,0 +1,24 @@
+var line = readInput();
+var sum = 0;
+var i = 0;
+
+while( line != null )
+	if (line.size()!= 0)
+		if( i == 4)
+		println( line[0] );
+		println( line[1] );
+		sum = sum + line[0] - line[1];
+		println( sum );
+		sum = 0;
+		i = 0;
+		else
+			println( line[0] );
+			println( line[1] );
+			sum = sum + line[0] - line[1];
+			i = i + 1;
+		endif
+		line = readInput();
+	else
+		line = readInput();
+	endif
+endwhile

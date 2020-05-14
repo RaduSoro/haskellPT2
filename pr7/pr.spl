@@ -1,0 +1,15 @@
+var line = readInput();
+var flag = 2;
+var i = 0;
+
+while( line != null )
+	if( flag == i)
+		println(line[0]);
+		flag = 6 / flag;
+		i = 0;
+	else
+		i = i + 1;
+	endif
+	line = readInput();
+endwhile
+

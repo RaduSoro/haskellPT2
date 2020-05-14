@@ -1,0 +1,63 @@
+var line = readInput();
+var index = 0;
+
+var a = [];
+var b = [];
+
+while (line != null)
+    if( index == 3 )
+        println(a[0]);
+        a = a.pop();
+        println(a[0]);
+        a = a.pop();
+        println(b[0]);
+        b = b.pop();
+        println(b[0]);
+        b = b.pop();
+        println(b[0]);
+        b = b.pop();
+        index = 0;
+    endif
+    if( line.size() != 0 )
+        a = a.enque(line[0]);
+        b = b.enque(line[1]);
+        index = index + 1;
+        line = readInput();
+    else
+        line = readInput();
+    endif
+endwhile
+
+if( index == 2 )
+	var indexAcase2 = 0;
+	var indexBcase2 = 0;
+	while (a.size()!=0 and indexAcase2<2)
+		println(a[0]);
+    	a = a.pop();
+    	indexAcase2 = indexAcase2 + 1;
+	endwhile
+
+    while (b.size()!= 0 and indexBcase2<2 and indexAcase2 == 2)
+	    println(b[0]);
+	    b = b.pop();
+	    indexBcase2 = indexBcase2 + 1;
+    endwhile
+    indexAcase2 = 0;
+    indexBcase2 = 0;
+endif
+if( index == 1 )
+	var indexAcase3 = 0;
+	var indexBcase3 = 0;
+	while (a.size()!=0 and indexAcase3<2)
+		println(a[0]);
+    	a = a.pop();
+    	indexAcase3 = indexAcase3 + 1;
+	endwhile
+    while (b.size()!= 0 and indexBcase3<1 and indexAcase3 == 2)
+	    println(b[0]);
+	    b = b.pop();
+	    indexBcase3 = indexBcase3 + 1;
+    endwhile
+    indexAcase3 = 0;
+	indexBcase3 = 0;
+endif

@@ -1,0 +1,14 @@
+var line = readInput();
+var i = 1;
+
+while( line != null )
+	if(line.size()!=0)
+		println( line[0] );
+		println( i );
+		i = i + 1;
+		line = readInput();
+	else
+		line = readInput();
+	endif
+
+endwhile

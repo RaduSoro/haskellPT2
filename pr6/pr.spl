@@ -1,0 +1,10 @@
+var line = readInput();
+var sum = 0;
+
+while (line != NullVal)
+    sum = sum + line[0];
+    println(sum);
+    line = readInput();
+endwhile
+
+

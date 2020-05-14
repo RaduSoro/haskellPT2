@@ -1,0 +1,9 @@
+var line = readInput();
+var i = 1;
+
+while( line != null )
+	println( line[0] );
+	println( i );
+	i = i + 1;
+	line = readInput();
+endwhile
